@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script src="js/loadFile.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>TEST</title>
+
+</head>
+
+<body>
+
+
+
+    <input type="file" name="fileToUpload" onchange="getSelectedfile()" id="fileToUpload">
+
+
+
+
+    <div class="file-list">
+        <h1>Liste des fichiers</h1>
+
+        <div class="files-container">
+            <nav data-role="ribbonmenu">
+                <ul class="tabs-holder">
+                    <li class="static"><a href="#">Jeunesse porsel</a></li>
+                    <li><a href="#section-one">Options</a></li>
+                </ul>
+
+                <div class="content-holder">
+                    <div class="section" id="section-one">
+                        <div class="group">
+
+                            <button onclick="deleteFile()" class="ribbon-button" id="delete" disabled>
+                                    <span class="mif-cross-light mif-3x fg-red icon">
+                                      
+                                    </span>
+                                <span class="caption">Supprimer</span>
+                            </button>
+
+
+
+                            <button class="ribbon-button" id="download" onclick="download()" disabled>
+                            <span class="mif-file-download mif-3x  fg-blue icon">
+                              
+                            </span>
+                        <span class="caption" >Télécharger</span>
+                    </button>
+                            <span class="title">Action sur un fichier</span>
+                        </div>
+
+                        <div class="group">
+
+                            <button onclick="createFolder()" class="ribbon-button">
+                                <span class="mif-create-new-folder mif-3x  fg-blue icon">
+                                  
+                                </span>
+                            <span class="caption">Créer un dossier</span>
+                            </button>
+
+
+                            <button class="ribbon-button" onclick="filePicker()">
+                             
+                            <span class="mif-add mif-3x  fg-blue icon">
+                              
+                            </span>
+                        <span class="caption">Choisir un fichier</span>
+                    </button>
+
+
+                            <button class="ribbon-button" onclick="addFile()">
+                        <span class="mif-file-upload mif-3x  fg-blue icon">
+                          
+                        </span>
+                    <span class="caption">Ajouter un fichier</span>
+                </button>
+
+                            <span class="title">Action générale</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="files" class="files">
+            </div>
+        </div>
+    </div>
+    <div id="downloadFile"></div>
+    <script src="js/test.js"></script>
+
+</body>
+
+</html>

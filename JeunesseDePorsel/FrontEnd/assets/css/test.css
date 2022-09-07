@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Prompt", sans-serif;
+
+  box-sizing: border-box;
+}
+
+.nav{
+  background: #001220 ;
+}
+
+.menu 
+{
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+ 
+.menu-center{
+
+  display: flex;
+  flex-direction: row;
+ 
+  justify-content: space-around;
+
+}
+.menu-center li{
+
+
+  list-style: none;
+  padding-left: 3em;
+  padding-right: 3em;
+
+}
+
+.main {
+  background-color: #fcaf3c;
+  height: 100%;
+}
+ 
+
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1{
+  background-image: url('../svg/bg-wave2.svg');
+}
+.layer2{
+  background-image: url('../svg/bg-wave.svg');
+}

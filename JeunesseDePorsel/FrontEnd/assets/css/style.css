@@ -1,0 +1,770 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+.tabulator-print-header, tabulator-print-footer{
+    text-align:center;
+}
+
+.content {
+    display: none;
+}
+
+.loading {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #16191e;
+    position: absolute;
+}
+
+.loading>div {
+    height: 100px;
+    width: 100px;
+    border: 15px solid #45474b;
+    border-top-color: #2a88e6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #48dbfb60;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #353b48;
+}
+
+.navbar {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 999;
+    transition: 0.3s linear;
+}
+
+.inner-width {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.navbar .inner-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: 75px;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+}
+
+.menu-toggler {
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+    transition: 0.3s linear;
+}
+
+.navbar-menu a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.2s linear;
+}
+
+.navbar-menu a:hover {
+    color: #f9f210 !important;
+}
+
+.sticky {
+    background-color: #fff;
+    padding: 18px 0;
+}
+
+.sticky .logo {
+    background-image: url(../images/logo.png);
+}
+
+.sticky .navbar-menu a {
+    color: #111;
+}
+
+.sticky .menu-toggler span {
+    background-color: #111;
+}
+
+#acceuil {
+    height: 100vh;
+    min-height: 500px;
+    background-color: #130f0c;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#acceuil .inner-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#acceuil .content {
+    width: 100%;
+    color: #fff;
+}
+
+#acceuil .content h1 {
+    font-size: 60px;
+    margin-bottom: 60px;
+    color: #f9f210;
+}
+
+#acceuil .content h1 span {
+    color: #b7161c;
+}
+
+
+/*================*/
+
+
+/*Calendrier théatre*/
+
+
+/*================*/
+
+#theatre {
+    height: auto;
+}
+
+#theatre .inner-width .event {
+    margin: 25px;
+    border-radius: 10px;
+}
+
+#theatre .inner-width .image {
+    padding-top: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#theatre .inner-width .image .debut {
+    width: 360px;
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+#theatre .inner-width .image .millieu {
+    font-weight: bold;
+    width: 360px;
+    margin: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#theatre .inner-width .image .fin {
+    font-size: 18px;
+    width: 360px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#theatre .inner-width .flyers {
+    width: 360px;
+    height: auto;
+    display: block;
+}
+
+#theatre .inner-width .event .eventday {
+    margin-top: 30px;
+    display: flex;
+    height: 100%;
+    flex-flow: row wrap;
+    text-align: center;
+    flex: 1 100%;
+}
+
+#theatre .inner-width .event .eventday .day {
+    max-width: 75px;
+    min-width: 50px;
+    height: auto;
+    color: #ffffff;
+    background-color: #202020;
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#theatre .inner-width .event .eventday .day #month {
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#theatre .inner-width .event .eventday .day #day {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+}
+
+#theatre .inner-width .event .eventday .element {
+    text-align: left;
+    background-color: #fafafa;
+    border-radius: 5px;
+    color: #1d2129;
+    padding-left: 15px;
+    width: 75%;
+    padding-bottom: 15px;
+}
+
+#theatre .inner-width .event .eventday .element {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#theatre .inner-width .event .eventday .element .under {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#theatre .inner-width .event .eventday .element .place {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#theatre .inner-width .event .eventday .element .heure {
+    margin-top: 10px;
+    display: flex;
+    padding: 7px;
+    flex-flow: row wrap;
+    background-color: #ededed;
+    font-size: 13px;
+    border-radius: 20px;
+    width: 100px;
+    justify-content: space-around;
+    font-weight: normal;
+}
+
+#theatre .inner-width .event .eventday .element .under .download {
+    justify-content: space-between;
+    text-align: right;
+    min-width: 80%;
+    transition: 0.1s;
+}
+#theatre .inner-width .event .eventday .element .under .download .reserve {
+    color: #b7161c;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#theatre .inner-width .event .eventday .element .under .download .reserve:hover {
+    color: #f9f210;
+    transition: 0.1s;
+}
+ .downloadFile {
+    color: #b7161c;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ .downloadFile:hover {
+    color: #f9f210;
+    transition: 0.1s;
+}
+
+@media all and (min-width: 600px) {
+    #theatre .inner-width .event .eventday .day {
+        transition: 0.1s;
+        flex: 1 0 0;
+    }
+}
+
+@media all and (min-width: 800px) {
+    #theatre .inner-width .event .eventday .element {
+        transition: 0.1s;
+        flex: 3 0px;
+    }
+    #theatre .inner-width .event .eventday .day {
+        transition: 0.1s;
+        order: 1;
+    }
+    #theatre .inner-width .event .eventday .element {
+        transition: 0.1s;
+        order: 2;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #theatre .inner-width .event .eventday .element .under .download {
+        min-width: 45%;
+    }
+}
+
+
+/*================*/
+
+
+/*Calendrier evenement*/
+
+
+/*================*/
+
+#calendrier {
+    height: auto;
+}
+
+#calendrier .inner-width .image {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+#calendrier .inner-width .image .img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#calendrier .inner-width .image .img .flyers {
+    width: 360px;
+    height: auto;
+}
+
+#calendrier .inner-width .event {
+    margin: 25px;
+    border-radius: 10px;
+}
+
+#calendrier .inner-width .event .eventday {
+    margin-top: 30px;
+    display: flex;
+    height: 125px;
+    flex-flow: row wrap;
+    text-align: center;
+    flex: 1 100%;
+}
+
+#calendrier .inner-width .event .eventday .day {
+    max-width: 75px;
+    min-width: 50px;
+    height: 100%;
+    color: #ffffff;
+    background-color: #202020;
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#calendrier .inner-width .event .eventday .day #month {
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#calendrier .inner-width .event .eventday .day #day {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+}
+
+#calendrier .inner-width .event .eventday .element {
+    text-align: left;
+    background-color: #fafafa;
+    border-radius: 5px;
+    color: #1d2129;
+    padding-left: 15px;
+    width: 75%;
+}
+
+#calendrier .inner-width .event .eventday .element {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#calendrier .inner-width .event .eventday .element .under {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#calendrier .inner-width .event .eventday .element .place {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#calendrier .inner-width .event .eventday .element .heure {
+    margin-top: 10px;
+    display: flex;
+    padding: 5px;
+    flex-flow: row wrap;
+    background-color: #ededed;
+    font-size: 13px;
+    border-radius: 20px;
+    color: rgba(29, 33, 41, 0.6);
+    width: 100px;
+    justify-content: space-around;
+    font-weight: normal;
+}
+
+#calendrier .inner-width .event .eventday .element .under .download {
+    justify-content: space-between;
+    text-align: right;
+    min-width: 80%;
+    transition: 0.1s;
+}
+
+#calendrier .inner-width .event .eventday .element .under .download .reserve {
+    color: #b7161c;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#calendrier .inner-width .event .eventday .element .under .download .reserve:hover {
+    color: #f9f210;
+    transition: 0.1s;
+}
+
+@media all and (min-width: 600px) {
+    #calendrier .inner-width .event .eventday .day {
+        transition: 0.1s;
+        flex: 1 0 0;
+    }
+}
+
+@media all and (min-width: 800px) {
+    #calendrier .inner-width .event .eventday .element {
+        transition: 0.1s;
+        flex: 3 0px;
+    }
+    #calendrier .inner-width .event .eventday .day {
+        transition: 0.1s;
+        order: 1;
+    }
+    #calendrier .inner-width .event .eventday .element {
+        transition: 0.1s;
+        order: 2;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #calendrier .inner-width .event .eventday .element .under .download {
+        min-width: 45%;
+    }
+}
+
+.sm a {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: 0.2s linear;
+}
+
+.sm a:hover {
+    color: #b7161c;
+}
+
+#acceuil .buttons {
+    margin-top: 60px;
+}
+
+#acceuil .buttons a {
+    display: inline-block;
+    margin: 15px 30px;
+    color: #b7161c;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #b7161c;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: 0.2s linear;
+}
+
+#acceuil .buttons a:hover,
+#acceuil .buttons a:nth-child(2) {
+    background-color: #b7161c;
+    color: #fff;
+}
+
+section {
+    padding-top: 120px;
+    padding: 75px 0;
+    background-color: #f1f1f1;
+}
+
+
+/*================*/
+
+
+/*     FOOTER     */
+
+
+/*================*/
+
+footer {
+    background-color: #130f0c;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.copyright {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.copyright a {
+    font-size: 16px;
+    color: #b7161c;
+    font-weight: 500;
+}
+
+#loginButton{
+    display: inline-block;
+    margin: 15px 30px;
+    color: #b7161c;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #b7161c;
+    padding: 14px 0;
+    border-radius: 6px; 
+    transition: linear 0.2s;
+}
+#loginButton:hover{
+    background-color: #b7161c;
+    color: white;
+}
+
+.goTop {
+    position: fixed;
+    z-index: 999;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #b7161c;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+    .menu-toggler {
+        display: block;
+    }
+    .navbar-menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #353b48;
+        top: 0;
+        right: -100%;
+        max-width: 400px;
+        padding: 80px 50px;
+        transition: 0.3s linear;
+    }
+    .navbar-menu a {
+        display: block;
+        font-size: 30px;
+        margin: 30px 0;
+    }
+    .sticky .navbar-menu {
+        background-color: #f1f1f1;
+    }
+    .navbar-menu.active {
+        right: 0;
+    }
+    .menu-toggler.active span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 4px;
+    }
+    .menu-toggler.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggler.active span:nth-child(3) {
+        transform: rotate(45deg);
+        bottom: 14px;
+    }
+    .inner-width {
+        max-width: 800px;
+    }
+    .about-pic {
+        margin: 0 auto 60px;
+    }
+    .about-text {
+        flex: 100%;
+        text-align: center;
+    }
+    .contact-info .item {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .inner-width {
+        padding: 0 20px;
+    }
+    .nameZone,
+    .emailZone {
+        max-width: 100%;
+    }
+}
+
+
+/*================*/
+
+
+/** CONTACT **/
+
+
+/*================*/
+
+#contact .inner-width .card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+#contact .inner-width .card-container .card {
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border-radius: 2px;
+    height: 350px;
+    margin: 1rem;
+    width: 350px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+#contact .inner-width .card-container .card .card-title {
+    text-align: center;
+    padding: 1rem;
+}
+
+#contact .inner-width .card-container .card .addresse {
+    padding: 1rem;
+}
+
+#contact .inner-width .card-container .card p {
+    padding: 1rem;
+}
+
+#contact .inner-width .card-container .card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/*================*/
+
+
+/** PAGE INSCRIT **/
+
+
+/*================*/
+
+.evenement {
+    padding: 40px;
+    margin-left: 70px;
+    height: 970px;
+}
+
+.evenement h1 {
+    font-size: 32px;
+}
+
+.evenement table {
+    font-size: 16px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.evenement table th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+
+.evenement table tr:hover {
+    background-color: #D6EEEE;
+}
+
+#cmd {
+    margin-left: 70px;
+    width: 150px;
+    padding: 10px;
+}
+
+#cmd:hover {
+    background-color: #D6EEEE;
+}
+
+

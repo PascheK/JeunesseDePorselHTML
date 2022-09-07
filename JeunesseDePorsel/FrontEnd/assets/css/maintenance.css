@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Prompt", sans-serif;
+  color: white;
+  box-sizing: border-box;
+  background: #001220 ;
+}
+
+
+
+h1 {
+  font-size: 4rem;
+  background: transparent ;
+}
+p {
+  font-size: 1.5rem;
+  background: transparent ;
+}
+.sm{
+  padding-top: 10px;
+  background: transparent;
+
+}
+
+.icon{
+
+  transition: 0.5s;
+  color: aliceblue;
+  background: transparent;
+  padding: 10px;
+ 
+}
+.icon:hover{
+  transition: 1s;
+  color: #001220;
+}
+
+.yellow{
+  background: #FCAF3C ;
+}
+
+.center{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  padding-top: 100px;
+  
+  background: #FCAF3C ;
+}
+.grey{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50px;
+ 
+  background: #001220 ;
+}
+.link{
+  transition: 0.5s;
+  color: #FCAF3C;
+}
+.link:hover{
+  transition: 1s;
+  color: aliceblue;
+}
+
+
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.layer1{
+  background-image: url('../svg/bg-wave.svg');
+}
+.layer2{
+  background-image: url('../svg/bg-wave2.svg');
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    h1 {
+      font-size: 2rem;
+      background: transparent ;
+    }
+    p {
+      font-size: 1rem;
+      background: transparent ;
+    }
+
+    .center{
+      text-align: center;
+      padding-left: 10px;
+     padding-top: 70px;
+      min-height: 200px;
+    
+    }
+}

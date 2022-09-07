@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeunesse de Porsel</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="../assets/js/ctrl/scripts.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="loading">
+        <div></div>
+    </div>
+
+    <!-- Contenu -->
+    <div class="content">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="inner-width">
+                <a href="/" class="logo"></a>
+                <button class="menu-toggler" onclick="toggle()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu">
+                    <a href="#acceuil">Accueil</a>
+                  <!-- <a href="#theatre">Théâtre</a>--> 
+                    <a href="#calendrier">Calendrier</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Home -->
+        <section id="acceuil">
+            <div class="inner-width">
+                <div class="content">
+                    <h1><span>Jeunesse </span>Porsel</h1>
+                    <div class="sm">
+                        <a target="blank"
+                            href="https://fr-fr.facebook.com/pages/category/Company/Jeunesse-Porsel-1484975611820128/"
+                            class="fab fa-facebook-f"></a>
+                        <a target="blank" href="https://www.instagram.com/jeunesse_porsel/"
+                            class="fab fa-instagram"></a>
+                        <a href="mailto:info@jeunessedeporsel.ch?subject=Question?" class="far fa-envelope"></a>
+
+                    </div>
+                    <div class="buttons">
+                        <a href="mailto:info@jeunessedeporsel.ch?subject=Question?">Contactez nous</a>
+                        <a href="#calendrier">Réservation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Théatre section-->
+        <!--
+      <section id="theatre">
+          <div class="inner-width">
+              <h1 class="section-title">Théatre : La Quarantaine</h1>
+              <div class="image">
+                  <div>
+                      <p class="debut">A l’heure actuelle, où, ce si tristement célèbre virus fait part de notre quotidien comment créer une pièce de théâtre et ne pas évoquer tout ce qui a été dit, redit, compris ou non, au sujet de la pandémie qui a marqué ces dernières
+                          années.
+                          <br> C’est pour cela que la jeunesse de Porsel à le plaisir de vous présenter sa pièce intitulée :<br></p>
+                      <p class="millieu"> « La quarantaine »</p><br>
+                      <p class="fin"> Ecrite et mise en scène par Nicolas Bussard cette farce paysanne vous sera présentée les 7-8, 14-15-16 et 21-22 janvier 2023 au restaurant La fleur de Lys à Porsel.</p>
+                  </div>
+                  <div class="img"> <img src="download/La quarantaine-Flyers 2022.png" alt="Flyers Théatre" class="flyers"></div>
+              </div>
+
+              <div class="event" id="theatreCalendrier">
+
+
+              </div>
+
+          </div>
+      </section>
+
+-->
+        <!--Calendrier-->
+        <section id="calendrier">
+            <div class="inner-width">
+                <h1 class="section-title">Événement à venir</h1>
+                <div class="image">
+                    <div class="img"><img src="../assets/download/Soiree_villageoise.png" alt="Flyers fete"
+                            class="flyers"></div>
+                    <div class="img"> <img src="../assets/download/La_nuit_du_coyote.png" alt="Flyers fete"
+                            class="flyers"></div>
+
+                </div>
+
+
+                <div class="eventday">
+                    <div class="event" id="event">
+
+                    </div>
+
+                </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="inner-width">
+                <div class="copyright">
+                    &copy; 2022 | Created & Designed By <a href="https://www.paschek.emf-informatique.ch">PascheK</a>
+                </div>
+                <div class="sm">
+                    <a target="blank"
+                        href="https://fr-fr.facebook.com/pages/category/Company/Jeunesse-Porsel-1484975611820128/"
+                        class="fab fa-facebook-f"></a>
+                    <a target="blank" href="https://www.instagram.com/jeunesse_porsel/" class="fab fa-instagram"></a>
+                    <a href="mailto:info@jeunessedeporsel.ch?subject=Question?" class="far fa-envelope"></a>
+                </div>
+                <div class="loginButton" id="login">
+                    <a href="#login" id="loginButton">Login</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Go Top BTN -->
+        <button class="goTop fas fa-arrow-up" onclick="btnTop()"></button>
+    </div>
+
+
+</body>
+
+</html>
