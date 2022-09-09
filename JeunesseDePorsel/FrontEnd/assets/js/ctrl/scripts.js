@@ -25,7 +25,7 @@ $(document).ready(function () {
 function succes(result){
   let redirect = ""+result;
   if(redirect === "redirect ok"){
-    window.location.href = "https://jeunessedeporsel.ch/htdocs/JeunesseDePorsel/FrontEnd/views/jeunessedeporsel.html";
+    window.location.href = "https://jeunessedeporsel.ch/FrontEnd/views/jeunessedeporsel.html";
   }
 }
 
