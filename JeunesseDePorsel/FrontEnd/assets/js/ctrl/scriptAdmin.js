@@ -267,7 +267,7 @@ function errorRow() {
 function sessionOK(result) {
   let redirect = "" + result;
   if (redirect === "session fermé") {
-    window.location.href = "https://jeunessedeporsel.ch/htdocs/JeunesseDePorsel/FrontEnd/views/";
+    window.location.href = "https://jeunessedeporsel.ch/FrontEnd/views/";
   }
 }
 
