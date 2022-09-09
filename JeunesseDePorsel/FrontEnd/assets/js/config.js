@@ -5,7 +5,7 @@
  * @date 07.09.22
  */
  const config = {
-  CTRL: "https://jeunessedeporsel.ch/htdocs/JeunesseDePorsel/BackEnd/ctrl/",
+  CTRL: "https://jeunessedeporsel.ch/BackEnd/ctrl/",
   LANGUAGE: "FR",
 };
 
